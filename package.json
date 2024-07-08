@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dockerRun": "docker build -t react-app-iis .",
+    "dockerBuild":"docker run -d -p 8085:8085 --name react-app-container react-app-iis"
   },
   "eslintConfig": {
     "extends": [
